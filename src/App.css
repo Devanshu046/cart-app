@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+table {
+  background-color: #f9fafb;
+  text-align: center;
+  height: 50%;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 1px solid #a0bbd8;
+  padding: 8px;
+}
+@keyframes flash {
+  0% {
+    background-color: inherit;
+  }
+  50% {
+    background-color: rgba(255, 255, 0, 0.461);
+  }
+  100% {
+    background-color: inherit;
+  }
+}
+
+.flash {
+  animation: flash 0.5s ease-in-out;
+}
